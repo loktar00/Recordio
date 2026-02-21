@@ -1,5 +1,7 @@
 node_modules
-transcripts
-raw recordings
+transcripts/*
+!transcripts/.gitkeep
+raw recordings/*
+!raw recordings/.gitkeep
 Other
 meeting notes
