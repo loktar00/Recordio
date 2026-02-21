@@ -37,7 +37,7 @@ def process_audio_file(audio_file, device="cuda", batch_size=16, compute_type="f
 
         # 3. Assign speaker labels
 
-        diarize_model = whisperx.diarize.DiarizationPipeline(use_auth_token="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", device=device)
+        diarize_model = whisperx.diarize.DiarizationPipeline(use_auth_token="INSERT TOKEN HERE INVALIDATED", device=device)
         diarize_segments = diarize_model(audio)
         result = whisperx.assign_word_speakers(diarize_segments, result)
 
